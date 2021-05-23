@@ -22,6 +22,7 @@ class PlanetsController < ApplicationController
     @planet= @planet.new(planet_params)
     if(@planet.save)
       redirect_to #find where to direct
+    end
   end
 
   def destroy
