@@ -2,7 +2,8 @@ class PlanetsController < ApplicationController
   
 
   def index
-    render component: "Planets"
+    @planets = Planet.all
+    render component: "Planets", props: {planets: @planets}
   end
 
   def show
@@ -16,17 +17,11 @@ class PlanetsController < ApplicationController
   def edit
     render component: "PlanetEdit"
   end
-
-  def create
-    
-  end
-
+  
   def destroy
-    
-  end
-
-  def update
-    
+    @planet = Planet.find(params[:id])
+      @planet.destroy
+      redirect_to root_path
   end
 
 end
