@@ -1,10 +1,14 @@
 import React from 'react'
 
 const Planet = (props) => {
+
   return(
-    <div>
+    <>
       <h1>planet component</h1>
-    </div>
+      <h3>{name}</h3>
+      <p>created: {created_at}, id: {id}</p>
+      <a href="/">back</a>
+    </>
   )
 }
 export default Planet
