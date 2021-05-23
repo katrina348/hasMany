@@ -1,12 +1,10 @@
 import React from 'react'
+
 const PlanetEdit = (props) => {
-    const { sub } = props
-    return(
-        <div>
-            <h1>PlanetEdit Page</h1>
-            <p>Sub is {sub.name}</p>
-            <p>Sub id is {sub.id}</p>
-        </div>
-    )
+  return(
+    <div>
+      <h1>PlanetEdit component</h1>
+    </div>
+  )
 }
 export default PlanetEdit
